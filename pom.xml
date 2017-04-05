@@ -8,6 +8,18 @@
   <name>webappRunnerSample Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+  <distributionManagement>
+    <repository>
+         <id>devops</id>
+         <name>devops</name>
+         <url>http://localhost:8081/nexus/</url>
+    </repository>
+    <snapshotRepository>
+         <id>snapshots</id>
+         <name>Snapshots</name>
+         <url>http://localhost:8081/nexus/</url>
+    </snapshotRepository>
+</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
